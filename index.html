@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Morse Code Converter</title>
+</head>
+
+<body>
+    <!-- CDN Links -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&family=Lobster&family=Oxygen&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <!-- /CDN Links -->
+    <link rel="stylesheet" href="style.css">
+
+    <h1 class="card-title text-center head">Morse Code Converter</h1>
+    <div class="row">
+        <div class="card text-center col-lg-4 col-sm-9 mt-auto m-auto">
+            <div class="card-body">
+                <h4>Text to Morse Code</h4>
+                <div class="form-check-inline">
+                    <textarea id="txt2mor" class="form-control" placeholder="Text" name="txt2mor"></textarea>
+                </div>
+                <div class="form-check-inline">
+                    <textarea id="mor2txt" class="form-control" placeholder="Morse" name="mor2txt"></textarea>
+
+                </div>
+                <br>
+                <button type="submit" class="btn btn-dark m-2" onclick="convTxt2Mor()">Convert</button>
+                <button type="reset" class="btn btn-dark m-2" onclick="reset()">Reset</button>
+            </div>
+        </div>
+    </div>
+    <!-- Footer -->
+    <div class="footer text-center text-justify">
+        <h2>Hello world</h2>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
