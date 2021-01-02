@@ -19,37 +19,3 @@ body {
     font-family: 'Lobster', cursive;
     text-shadow: 0 5px 15px black;
 }
-
-.text-coffee {
-    color: #BB5400;
-}
-
-.links a {
-    color: white!important
-}
-
-.link-button {
-    padding: 25px;
-    border-radius: 50%;
-    font-size: 40px;
-}
-
-#github {
-    background-color: #000;
-}
-
-#twitter {
-    background-color: #00acee;
-}
-
-#linkedin {
-    background-color: #0e76a8;
-}
-
-#instagram {
-    background: linear-gradient(#ffdc80, #f56040)
-}
-
-.badge {
-    color: white;
-}
