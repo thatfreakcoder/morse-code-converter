@@ -154,3 +154,20 @@ function reset() {
     txt2mor.value = null;
     mor2txt.value = null;
 }
+function copyClipboard(){
+    //get value the text field converted morse code
+    var  mor2txt=document.getElementById('mor2txt');
+    var text=mor2txt.value;
+    if(text!=""){    
+    //select the value the text field
+    mor2txt.select();
+    //this for mobiles devices
+    mor2txt.setSelectionRange(0,99999);
+    //copy the text in morse code to clipboard
+    document.execCommand('copy');
+    //alert to show the user a message
+    alert("Morse code copied")
+    }else{
+        alert("invalid value in field morse code");
+    }
+}
